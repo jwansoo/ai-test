@@ -1,0 +1,25 @@
+{
+  "name": "nuxt_4",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.2.0",
+    "@nuxt/eslint": "^1.14.0",
+    "@nuxt/ui": "^4.4.0",
+    "ai": "^4.1.51",
+    "nuxt": "^4.3.1",
+    "ollama-ai-provider": "^1.2.0",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/mdc": "^0.20.1"
+  }
+}
