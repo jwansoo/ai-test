@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ChatMessage, Chat } from "~/types";
+import type { ChatMessage, Chat } from "../types";
 
 const props = defineProps<{
   messages: ChatMessage[];
@@ -48,7 +48,8 @@ watch(() => props.messages, pinToBottom, { deep: true });
               <MarkdownRenderer :content="message.content" />
             </div>
           </div>
-          <span v-if="typing" class="typing-indicator">&#9611;</span>
+
+          <span v-if="typing" class="typing-indicator"> &#9611; </span>
         </div>
 
         <div class="message-form-container">
@@ -198,6 +199,7 @@ watch(() => props.messages, pinToBottom, { deep: true });
 .message-input::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
 .typing-indicator {
   display: inline-block;
   animation: pulse 1s infinite;
